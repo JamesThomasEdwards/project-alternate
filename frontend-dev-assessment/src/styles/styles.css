@@ -1,0 +1,44 @@
+body{
+    margin: 0
+}
+.boardContainer{
+    border: 1px solid black;
+    width:700px;
+    height: 400px;
+}
+.header{
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    width: 673px;
+    height: 56px;
+    align-items: center
+}
+.button{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    width: 673px;
+    height: 100%;
+    align-items: center
+}
+.panelContainer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.panelA{
+    border: 1px dotted black;
+    background: #FFFFFF;
+    height: 280px;
+    width: 45%;
+    margin: 2.7%;    
+}
+.panelB{
+    border: 1px dotted black;
+    background:#EEEEEE;
+    height: 280px;
+    width: 45%;
+    margin: 2.7%;
+}
