@@ -15,7 +15,7 @@ module.exports = {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/
         }, {
-            test: /\.css$/,
+            test: /\.s?css$/,
             use: [
                 { loader: 'style-loader' },
                 { loader: 'css-loader' },
