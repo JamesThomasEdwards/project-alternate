@@ -1,0 +1,16 @@
+.header{
+    border-bottom: $border-solid;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__content{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: $text-size;
+    font-weight: $text-weight;
+}

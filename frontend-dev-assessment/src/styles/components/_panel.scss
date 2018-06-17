@@ -1,0 +1,30 @@
+.panel-container{
+    display: flex;
+    width: 90%;
+    height: 78%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-a{
+    border: $border-dotted;
+    background: #FFFFFF;
+    width: 46.75%;
+    height: 86%;
+    margin-top: 1.1%;
+    margin-bottom: 2%;
+}
+.panel-b{
+    border: $border-dotted;
+    background:#EEEEEE;
+    width: 46.75%;
+    height: 86%;
+    margin-top: 1.1%;
+    margin-bottom: 2%;
+}
+.panel-text{
+    margin: .5%;
+    font-size: $text-size;
+    font-weight: $text-weight;
+}
