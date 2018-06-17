@@ -13,12 +13,12 @@ const Board = (props) => {
             togglePanelContent={props.togglePanelContent} />
     })
     return (
-        <div className='boardContainer'>
+        <div className='board-container'>
             <Header
                 headerData={props.headerData}
                 toggleHeaderContent={props.toggleHeaderContent}
                 headerDisplay={props.headerDisplay} />
-            <div className='panelContainer'>
+            <div className='panel-container'>
                 {panels}
             </div>
         </div>

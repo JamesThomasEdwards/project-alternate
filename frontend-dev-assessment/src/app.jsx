@@ -3,19 +3,18 @@ import ReactDOM from 'react-dom';
 import { Component } from 'react';
 //Files
 import BoardContainer from './containers/BoardContainer.jsx'
-import './styles/styles.css'
 
 
 export default class App extends Component {
     render() {
+        const threeBoards = [0, 1, 2].map(ele => {
+            return <div className='boards-container'>
+                <BoardContainer id={ele} key={ele} />
+            </div>
+        })
         return (
             <div>
-                <div style={{ margin: '10px' }}>
-                    <BoardContainer />
-                </div>
-                <div style={{ margin: '10px' }}>
-                    <BoardContainer />
-                </div>
+                {threeBoards}
             </div>
         )
     }
