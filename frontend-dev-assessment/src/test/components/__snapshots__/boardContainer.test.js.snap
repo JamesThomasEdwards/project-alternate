@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render BoardContainer component correctly 1`] = `
+<div>
+  <Board
+    background={
+      Array [
+        Array [
+          true,
+          null,
+        ],
+        Array [
+          false,
+          null,
+        ],
+      ]
+    }
+    headerData={Array []}
+    headerDisplay={true}
+    toggleHeaderContent={[Function]}
+    togglePanelContent={[Function]}
+  />
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PanelBox component correctly 1`] = `
+<Uncontrolled(Panel)
+  className="panel-b"
+  onClick={[Function]}
+>
+  <PanelBody
+    bsClass="panel"
+    className="panel-text"
+    collapsible={false}
+  />
+</Uncontrolled(Panel)>
+`;

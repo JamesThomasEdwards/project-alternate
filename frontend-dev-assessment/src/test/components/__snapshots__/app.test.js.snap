@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App component correctly 1`] = `
+<div>
+  <div
+    className="boards-container"
+  >
+    <BoardContainer
+      id={0}
+    />
+  </div>
+  <div
+    className="boards-container"
+  >
+    <BoardContainer
+      id={1}
+    />
+  </div>
+  <div
+    className="boards-container"
+  >
+    <BoardContainer
+      id={2}
+    />
+  </div>
+</div>
+`;
