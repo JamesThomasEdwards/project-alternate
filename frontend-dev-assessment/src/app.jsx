@@ -8,9 +8,10 @@ import BoardContainer from './containers/BoardContainer.jsx'
 
 export default class App extends Component {
     render() {
-        const threeBoards = ['a', 'b', 'c'].map((ele, ind) => {
+        const numberOfBoardContainers = new Array(1, 2, 3)
+        const threeBoards = numberOfBoardContainers.map((ele, ind) => {
             return <div className='boards-container' key={ind}>
-                <BoardContainer id={ind} key={ind} />
+                <BoardContainer id={ind} key={ind + 1} />
             </div>
         })
         return (

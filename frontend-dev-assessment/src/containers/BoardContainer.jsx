@@ -9,31 +9,31 @@ import boardContentString from '../../boardContentData.js';
 export default class BoardContainer extends Component {
     state = {
         headerContent: [],
-        background: [[true, null], [false, null]],
-        headerDisplay: true,
+        showHidePanelContent: [[true, null], [false, null]],
+        showHideHeaderContent: true,
         boardContent: null
     }
     //Toggles panel content
     togglePanelContent = (id) => {
         let boardContent = this.state.boardContent
         if (id === 1) {
-            this.setState(() => ({ background: [[false, null], [true, boardContent.contentB]] }))
+            this.setState(() => ({ showHidePanelContent: [[false, null], [true, boardContent.contentB]] }))
         } else {
-            this.setState(() => ({ background: [[true, boardContent.contentA], [false, null]] }))
+            this.setState(() => ({ showHidePanelContent: [[true, boardContent.contentA], [false, null]] }))
         }
     }
     //Toggles header content
     toggleHeaderContent = () => {
         let boardContent = this.state.boardContent
-        if (this.state.headerDisplay) {
+        if (this.state.showHideHeaderContent) {
             this.setState(() => ({
                 headerContent: [],
-                headerDisplay: false
+                showHideHeaderContent: false
             }))
         } else {
             this.setState(() => ({
                 headerContent: boardContent.headerData,
-                headerDisplay: true
+                showHideHeaderContent: true
             }))
         }
     }
@@ -42,7 +42,7 @@ export default class BoardContainer extends Component {
         let boardContent = JSON.parse(boardContentString)
         this.setState(() => ({
             headerContent: boardContent.headerData,
-            background: [[true, boardContent.contentA], [false, null]],
+            showHidePanelContent: [[true, boardContent.contentA], [false, null]],
             boardContent
         }))
     }
@@ -52,8 +52,8 @@ export default class BoardContainer extends Component {
                 <Board
                     headerData={this.state.headerContent}
                     toggleHeaderContent={this.toggleHeaderContent}
-                    headerDisplay={this.state.headerDisplay}
-                    background={this.state.background}
+                    showHideHeaderContent={this.state.showHideHeaderContent}
+                    showHidePanelContent={this.state.showHidePanelContent}
                     togglePanelContent={this.togglePanelContent}
                 />
             </div>

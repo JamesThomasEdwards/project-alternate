@@ -6,8 +6,8 @@ import PanelBox from './PanelBox.jsx';
 
 
 const Board = (props) => {
-    // creates 2 panels based on state => background
-    const panels = props.background.map((ele, ind) => {
+    // creates 2 panels based on state => panelContent
+    const panels = props.showHidePanelContent.map((ele, ind) => {
         return <PanelBox
             id={ind} key={ind}
             showContent={ele[0]}
@@ -23,7 +23,7 @@ const Board = (props) => {
                 headerDataTwo={props.headerData[1]}
                 headerDataThree={props.headerData[2]}
                 toggleHeaderContent={props.toggleHeaderContent}
-                headerDisplay={props.headerDisplay} />
+                showHideHeaderContent={props.showHideHeaderContent} />
             <div className='panel-container'>
                 {panels}
             </div>
