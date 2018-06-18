@@ -1,3 +1,4 @@
+//React
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Component } from 'react';
@@ -7,9 +8,9 @@ import BoardContainer from './containers/BoardContainer.jsx'
 
 export default class App extends Component {
     render() {
-        const threeBoards = [0, 1, 2].map(ele => {
-            return <div className='boards-container'>
-                <BoardContainer id={ele} key={ele} />
+        const threeBoards = ['a', 'b', 'c'].map((ele, ind) => {
+            return <div className='boards-container' key={ind}>
+                <BoardContainer id={ind} key={ind} />
             </div>
         })
         return (
