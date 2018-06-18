@@ -1,8 +1,9 @@
+//React
 import React from 'react';
 import { Component } from 'react';
 //Files
 import Board from '../components/Board.jsx'
-import data from '../../data.js';
+import boardContentString from '../../boardContentData.js';
 
 
 export default class BoardContainer extends Component {
@@ -38,7 +39,7 @@ export default class BoardContainer extends Component {
     }
     //takes in the JSON string, parse it, and updates the state
     componentDidMount() {
-        let boardContent = JSON.parse(data)
+        let boardContent = JSON.parse(boardContentString)
         this.setState(() => ({
             headerContent: boardContent.headerData,
             background: [[true, boardContent.contentA], [false, null]],
