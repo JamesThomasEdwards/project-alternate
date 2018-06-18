@@ -7,10 +7,24 @@
 }
 .header__content{
     display: flex;
-    width: 100%;
+    width: 75%;
     padding: 2%;
     justify-content: space-around;
     align-items: center;
     font-size: $text-size;
     font-weight: $text-weight;
+}
+.header__button{
+    display: flex;
+    width: 25%;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: $text-size;
+    font-weight: $text-weight;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
