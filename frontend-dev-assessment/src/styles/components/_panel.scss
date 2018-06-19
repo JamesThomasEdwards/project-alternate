@@ -7,7 +7,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.panel-a{
+
+.panel-show-content{
     border: $border-dotted;
     background: #FFFFFF;
     width: 46.75%;
@@ -15,7 +16,8 @@
     margin-top: 1.1%;
     margin-bottom: 2%;
 }
-.panel-b{
+
+.panel-hide-content{
     border: $border-dotted;
     background:#EEEEEE;
     width: 46.75%;
@@ -23,7 +25,8 @@
     margin-top: 1.1%;
     margin-bottom: 2%;
 }
-.panel-text{
+
+.panel-container__panel-text{
     margin: .5%;
     font-size: $text-size;
     font-weight: $text-weight;

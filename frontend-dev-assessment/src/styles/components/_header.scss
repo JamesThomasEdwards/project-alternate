@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .header__content{
     display: flex;
     width: 75%;
@@ -14,16 +15,8 @@
     font-size: $text-size;
     font-weight: $text-weight;
 }
+
 .header__button{
-    display: flex;
-    width: 25%;
-    padding: 2%;
-    justify-content: space-around;
-    align-items: center;
-    font-size: $text-size;
-    font-weight: $text-weight;
-}
-button{
     background-color: transparent;
     border: none;
     outline: none;
