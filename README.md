@@ -1,6 +1,6 @@
 # Instructions
 
-***PLESAE READ***
+***PLEASE READ ENTIRE README FOR DETAILS***
 
 Navigate to the frontend-dev-assessment directory
 ``` 
