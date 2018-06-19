@@ -14,11 +14,17 @@ exports[`should render Header component correctly 1`] = `
     <p
       className="header__content"
     />
-    <p
+    <div
       className="header__content"
     >
-      +
-    </p>
+      <button
+        className="header__button"
+      >
+        <p>
+          +
+        </p>
+      </button>
+    </div>
   </div>
 </nav>
 `;

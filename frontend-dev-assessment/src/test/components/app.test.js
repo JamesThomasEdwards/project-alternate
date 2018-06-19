@@ -1,9 +1,10 @@
-import React from 'react'
+// React;
+import React from 'react';
+// Files;
 import App from '../../app.jsx';
+// Testing
 import ReactShallowRenderer from 'react-test-renderer/shallow';
-import BoardContainer from '../../containers/BoardContainer.jsx';
 import { configure } from 'enzyme';
-import { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });

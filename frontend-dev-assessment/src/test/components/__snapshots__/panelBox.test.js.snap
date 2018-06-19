@@ -2,12 +2,12 @@
 
 exports[`should render PanelBox component correctly 1`] = `
 <Uncontrolled(Panel)
-  className="panel-b"
+  className="panel-hide-content"
   onClick={[Function]}
 >
   <PanelBody
     bsClass="panel"
-    className="panel-text"
+    className="panel-container__panel-text"
     collapsible={false}
   />
 </Uncontrolled(Panel)>

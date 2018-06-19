@@ -1,5 +1,8 @@
-import React from 'react'
+// React;
+import React from 'react';
+// File;
 import Header from '../../components/Header.jsx';
+// Testing;
 import ReactShallowRenderer from 'react-test-renderer/shallow';
 import { shallow } from 'enzyme';
 import { configure } from 'enzyme';
@@ -13,14 +16,14 @@ test('should render Header component correctly', () => {
     expect(renderer.getRenderOutput()).toMatchSnapshot();
 });
 
-describe('React unit tests', () => {
+describe('Header component test', () => {
     describe('<Header />', () => {
         let wrapper = shallow(<Header headerDataOne='30%'
             headerDataTwo='$2000000'
             headerDataThree='85%'
             toggleHeaderContent={undefined}
             headerDisplay={undefined} />)
-        it('Renders a <div> with class "square"', () => {
+        it('Renders a <nav>', () => {
             expect(wrapper.type()).toEqual('nav');
         });
     });

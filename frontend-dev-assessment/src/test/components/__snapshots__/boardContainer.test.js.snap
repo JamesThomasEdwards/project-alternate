@@ -3,7 +3,9 @@
 exports[`should render BoardContainer component correctly 1`] = `
 <div>
   <Board
-    background={
+    headerData={Array []}
+    showHideHeaderContent={true}
+    showHidePanelContent={
       Array [
         Array [
           true,
@@ -15,8 +17,6 @@ exports[`should render BoardContainer component correctly 1`] = `
         ],
       ]
     }
-    headerData={Array []}
-    headerDisplay={true}
     toggleHeaderContent={[Function]}
     togglePanelContent={[Function]}
   />
