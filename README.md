@@ -1,5 +1,7 @@
 # Instructions
 
+***PLESAE READ***
+
 Navigate to the frontend-dev-assessment directory
 ``` 
 cd frontend-dev-assessment 
@@ -33,7 +35,7 @@ npm run test -- --watchAll
 
 # JSON string provided
 
-The JSON string that was provided was not a JSON string. It was a JSON object, but was missing a comma after the 'contentA' value. I added the comma and converted the JOSN object into a JSON string and placed it in another file called boardContentData.js. I then parsed it in my componentDidMount located in BoardContainer.jsx.
+The JSON string that was provided was not a JSON string. It was a JSON object, but was missing a comma after the 'contentA' value. I added the comma and converted the JOSN object into a JSON string and placed it in another file called boardContentJSONString.js. I then parsed it in my componentDidMount located in BoardContainer.jsx.
 
 # Used SCSS for style & Normalize.css
 
@@ -57,7 +59,7 @@ When I clarified you mentioned to just render 3 of them. They all behave indepen
 
 When I quickly converted this over to Redux, this was an issue! I know I mentioned above this was too small for Redux, but I had solve this problem. I didn't have time; however, the solutions I came up with was:
 
- (1) Using reducer-action-interceptor. Here's information on it below:
+(1) Using reducer-action-interceptor. Here's information on it below:
 https://github.com/jony89/reducer-action-interceptor
 
 (2) Reorganizing my state and create 'num' times to render the component. In this case it would be 3! I would have the data (JSON string) parsed in my Action Creators, creating an array of 3 sets of data with a couple of true/false values, and passing that in as a payload to the action creator that's dispatched in my componentDidMount. This would update the Redux store with a set for each component. Of course i would give each <BoardContainer/> a unique id.
