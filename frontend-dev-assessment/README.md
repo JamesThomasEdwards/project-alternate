@@ -1,26 +1,33 @@
-#### Instructions
+## Instructions
 
+Navigate to the frontend-dev-assessment directory
 ``` 
 cd frontend-dev-assessment 
 ```
 
-from the frontend-dev-assessment directory
+From the frontend-dev-assessment directory
 
 ```
 npm i
 ```
 
-build
+Build
 
 ```
 npm run build
 ```
 
-start dev server
+Start the dev server
 
 ```
 npm run dev-server
 ```
 
-go to http://localhost:8080/
+Go to http://localhost:8080/ 
+
+### For testing
+
+```
+npm run test -- --watchAll
+```
 
