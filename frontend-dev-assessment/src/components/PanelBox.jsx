@@ -12,6 +12,11 @@ const propTypes = {
 };
 
 const PanelBox = (props) => {
+    // props.togglePanelContent toggles panel A from;
+    // have text (shown by props.showText)/ light background and panel B to have a darkened background;
+    // to panel A with darkend background and panel B to have text;
+    // it takes in props.id that's given as an index when rendered. This checks that; 
+    // id to see if it is true or false in showHidePanelContent;
     return (
         <Panel
             className={props.showContent ? 'panel-show-content' : 'panel-hide-content'}

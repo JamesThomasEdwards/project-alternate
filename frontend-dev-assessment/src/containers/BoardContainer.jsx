@@ -12,7 +12,8 @@ export default class BoardContainer extends Component {
         showHideHeaderContent: true,
         boardContent: null
     };
-    // toggles panel content;
+    // toggles panel content, showing text/ background lightend on one;
+    // and darkend background with no text on the other;
     togglePanelContent = (id) => {
         let boardContent = this.state.boardContent;
         if (id === 1) {
@@ -26,6 +27,8 @@ export default class BoardContainer extends Component {
         };
     };
     // toggles header content;
+    // press on the '-' to hide content and change '-' to '+'; 
+    // '+' to show content and change back to '-'
     toggleHeaderContent = () => {
         let boardContent = this.state.boardContent;
         if (this.state.showHideHeaderContent) {

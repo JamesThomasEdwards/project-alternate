@@ -12,6 +12,10 @@ const propTypes = {
 };
 
 const Header = (props) => {
+    // props.toggleHeaderContent =>toggles header content;
+    // press on the '-' to hide content and change '-' to '+' (uses props.showHideHeaderContent); 
+    // '+' to show content and change back to '-';
+
     return (
         <nav>
             <div className="header">
@@ -20,7 +24,9 @@ const Header = (props) => {
                 <p className="header__content">{props.headerDataThree}</p>
                 <div className="header__content">
                     <button className="header__button"
-                        onClick={props.toggleHeaderContent}><p>{props.showHideHeaderContent ? '-' : '+'}</p>
+                        onClick={props.toggleHeaderContent}>
+
+                        <p>{props.showHideHeaderContent ? '-' : '+'}</p>
                     </button>
                 </div>
             </div>
