@@ -3,7 +3,7 @@ import React from 'react';
 import { Component } from 'react';
 // Files;
 import Board from '../components/Board.jsx';
-import boardContentString from '../../boardContentData.js';
+import boardContentJSONString from '../../boardContentJSONString';
 
 export default class BoardContainer extends Component {
     state = {
@@ -42,7 +42,7 @@ export default class BoardContainer extends Component {
     };
     // takes in the JSON string, parse it, and updates the state;
     componentDidMount() {
-        let boardContent = JSON.parse(boardContentString);
+        let boardContent = JSON.parse(boardContentJSONString);
         this.setState(() => ({
             headerContent: boardContent.headerData,
             showHidePanelContent: [[true, boardContent.contentA], [false, null]],
