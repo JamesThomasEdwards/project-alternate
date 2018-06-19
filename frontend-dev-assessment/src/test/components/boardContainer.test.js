@@ -5,7 +5,7 @@ import ReactShallowRenderer from 'react-test-renderer/shallow';
 import BoardContainer from '../../containers/BoardContainer.jsx';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
+import Board from '../../components/Board.jsx';
 
 configure({ adapter: new Adapter() });
 
